@@ -13017,6 +13017,19 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
+<style type="text/css">
+    /*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
+
+    </style>
 
 
 <style type="text/css">
@@ -13179,15 +13192,15 @@ $( document ).ready(code_toggle);
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In todays competitive and evolving <strong>Consumer Packaged Goods (CPG)</strong> market, shelf management is a very important aspect for CPG manufacturers and retailers. <strong>Automated Retail Shelf Analytics</strong> is a powerful, accurate, and efficient way for CPG manufacturers and retailers to collect, measure, and analyze what is happening on the physical shelf; It helps them improve operational efficiencies, elevate shopper experience, and maximize revenues. In <strong>Automated Retail Shelf Analytics</strong>, power of <strong>advanced computer vision</strong> is harnessed and store shelves images are transformed into a comprehensive set of SKU-level metrics and insights which are listed follows:</p>
+<p>In today's competitive and evolving <strong>Consumer Packaged Goods (CPG)</strong> market, shelf management is a very important aspect for CPG manufacturers and retailers. <strong>Automated Retail Shelf Analytics</strong> is a powerful, accurate, and efficient way for CPG manufacturers and retailers to collect, measure, and analyze what is happening on the physical shelf; It helps them improve operational efficiencies, elevate shopper experience, and maximize revenues. In <strong>Automated Retail Shelf Analytics</strong>, power of <strong>advanced computer vision</strong> is harnessed and store shelves images are transformed into a comprehensive set of SKU-level metrics and insights which are listed as follows:</p>
 <ol>
 <li>Count of each SKU</li>
 <li>Linear shelf share of each SKU</li>
 <li>List of out of stock SKUs</li>
-<li>Metrics related to placement of SKUs</li>
+<li>Metrics related to the placement of SKUs</li>
 <li>Promos and price tags displayed against the SKUs</li>
 </ol>
-<p>Once shelf pictures are captured and uploaded to the server, this technology automatically recognizes all SKUs, computes aforementioned KPIs, and delivers actionable reports back in the hands of the sales reps.</p>
+<p>Once shelf pictures are captured and uploaded to the server, this technology automatically recognizes all SKUs, computes the aforementioned KPIs, and delivers actionable reports back in the hands of the sales reps.</p>
 
 </div>
 </div>
@@ -13248,7 +13261,7 @@ $( document ).ready(code_toggle);
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Since this project was for one of our CPG client at <strong>Fractal Analytics</strong>, it is not possible for me to present the project details on actual shelf data, so I will be presenting all the details with respect to a dataset which is available on <strong>Github</strong> for similar research. The dataset can be downloaded from <a href="https://github.com/gulvarol/grocerydataset">https://github.com/gulvarol/grocerydataset</a></p>
+<p>Since this project was for one of our CPG clients at <strong>Fractal Analytics</strong>, I cannot present the project details on actual shelf data, so I will be presenting all the details with a public dataset that is available on <strong>Github</strong> for similar research. The dataset can be downloaded from <a href="https://github.com/gulvarol/grocerydataset">https://github.com/gulvarol/grocerydataset</a>.</p>
 
 </div>
 </div>
@@ -13260,15 +13273,15 @@ $( document ).ready(code_toggle);
 <ol>
 <li>It was collected from around 40 groceries, with 4 cameras.</li>
 <li>It consists of products from 10 different cigarette brands.</li>
-<li>It consists of total 354 shelf images.</li>
-<li>Out of these 354 shelf images, 300 has been used for training and rest has been used for testing.</li>
-<li>Annotation looks as shown below. Where, first entry is shelf image name (C1_P04_N1_S3_2.JPG), then number of products on that shelf (42), then (x,y,w,h) (1024, 1660, 228, 336) corresponding to these bounding boxes, and then brand id of the product (0).</li>
+<li>It consists of a total of 354 shelf images.</li>
+<li>Out of these 354 shelf images, 300 has been used for training and the rest has been used for testing.</li>
+<li>Annotation looks as shown below. Where the first entry is shelf image name (C1_P04_N1_S3_2.JPG), then the number of products on that shelf (42), then (x,y,w,h) (1024, 1660, 228, 336) corresponding to these bounding boxes, and then brand id of the product (0).</li>
 </ol>
 <p><img src="images/Annotation_rsa.png" alt="title"></p>
 <ol>
 <li>It has only bounding box co-ordinates but no class information for all these bounding boxes.</li>
-<li>Co-ordinates are given as (x, y, w, h) where (x, y) is co-ordinate of upper-left corner, and (w,h) are width and height of the bounding box.</li>
-<li>All the bounding boxes are labeled as class 0. That is why, data for classification has to be labeled manually.   </li>
+<li>Co-ordinates are given as (x, y, w, h) where (x, y) is co-ordinate of upper-left corner, and (w,h) is the width and the height of the bounding box.</li>
+<li>All the bounding boxes are labeled as class 0. Therefore, data for classification has to be labeled manually.   </li>
 </ol>
 
 </div>
@@ -13306,8 +13319,8 @@ $( document ).ready(code_toggle);
 <li>Images must be inputted in left to right order.</li>
 <li>It stitches two images at a time and repeats the process.</li>
 <li>Images must be resized such that they have equal height.</li>
-<li>It uses <strong>Sift descriptor</strong> to stitch images on the basis of matching key-points between the images.</li>
-<li>No. of matched key-points must be greater than 5% of total no. of pixels in smaller image, otherwise we say that there is not sufficient overlap and stitching can't be performed.</li>
+<li>It uses <strong>Sift descriptor</strong> to stitch images based on matching key-points between the images.</li>
+<li>No. of matched key-points must be greater than 5% of the total no. of pixels in the smaller image, otherwise, we say that there is not sufficient overlap and stitching can't be performed.</li>
 </ol>
 
 </div>
@@ -13619,12 +13632,12 @@ $( document ).ready(code_toggle);
 <p>A few implementation details of this module are as follows:</p>
 <ol>
 <li>Object detection was used just to draw bounding boxes (localization) but not for classification.</li>
-<li>Each bounding box was classified as one class, since we didn't have any class information.</li>
+<li>Each bounding box was classified as one class since we didn't have any class information.</li>
 <li>For object detection, <strong>YOLO</strong> in <strong>Keras</strong> and <strong>Google API</strong> in <strong>TensorFlow</strong> have been used.</li>
 <li><strong>Google Object Detection API</strong> was found to give better results.</li>
 <li>In Google API, different architectures have been tried but <strong>Faster_rcnn_resnet50_coco</strong> architecture was found to perform better.</li>
 <li>Pre-trained weights were fine-tuned with this dataset. For this purpose, <strong>config</strong> and <strong>labelmap.txt</strong> files were modified as per our dataset. Labelmap.txt file contains class information and config file contains all the information related to image size; architecture; training; and paths for train.record, val.record and labelmap.txt.</li>
-<li>Finetuned model are exported as Tensorflow graph proto (.pb format) file which is loaded for inference.</li>
+<li>Finetuned model is exported as a Tensorflow graph proto (.pb format) file which is loaded for inference.</li>
 <li>At inference time, this module outputs 4 tensors:<ol>
 <li><strong>num_detections</strong></li>
 <li><strong>detection_scores</strong></li>
@@ -13632,7 +13645,7 @@ $( document ).ready(code_toggle);
 <li><strong>detection_classes</strong></li>
 </ol>
 </li>
-<li>All boxes with score less than 0.3 were ignored.</li>
+<li>All boxes with a score of less than 0.3 were ignored.</li>
 <li>Overlapping boxes were removed using <strong>Non Maximum Suppression (NMS)</strong>.</li>
 <li>An <strong>F1-score</strong> of <strong>0.798</strong> was achieved.</li>
 </ol>
@@ -13712,7 +13725,7 @@ $( document ).ready(code_toggle);
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A few implementation details of this module are as follows:</p>
 <ol>
-<li>Since all the bounding boxes were annotated with class 0, we had to label the data for classification manually. For this purpose, detected objects from the training data were selected and then further refined to make a better dataset for classification module.</li>
+<li>Since all the bounding boxes were annotated with class 0, we had to label the data for classification manually. For this purpose, detected objects from the training data were selected and then further refined to make a better dataset for the classification module.</li>
 <li>Total 6550 images were split (stratified) as follows:<ol>
 <li>Training data: 85 %</li>
 <li>Validation data: 10 %</li>
@@ -13741,7 +13754,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This cell contains code for classification module.</span>
@@ -13970,7 +13983,7 @@ $( document ).ready(code_toggle);
 <ol>
 <li>Bounding boxes with different colors represent different brands of cigarettes classified.</li>
 <li>Red dots represent the misclassified objects.</li>
-<li>Yellow dots represent boxes which were not detected.</li>
+<li>Yellow dots represent boxes that were not detected.</li>
 </ol>
 
 </div>
@@ -13989,10 +14002,10 @@ $( document ).ready(code_toggle);
 <p>A few implementation details of this module are as follows:</p>
 <ol>
 <li>Outputs from previous modules were used to calculate all the relevant metrics.</li>
-<li>Number of racks on a shelf were found by sorting the x co-ordinates and then finding the transition points.</li>
-<li>Length (width) of each SKU were found by using the predicted width (w) of a bounding box.</li>
-<li>Length of each racks were also found in order to calculate the linear shelf share.</li>
-<li>All these informations were used to calculate aforementioned metrics.</li>
+<li>Number of racks on a shelf was found by sorting the x co-ordinates and then finding the transition points.</li>
+<li>Length (width) of each SKU was found by using the predicted width (w) of a bounding box.</li>
+<li>Length of each rack was also found to calculate the linear shelf share.</li>
+<li>All these pieces of information were used to calculate the aforementioned metrics.</li>
 </ol>
 
 </div>
@@ -14871,24 +14884,24 @@ $( document ).ready(code_toggle);
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>All these generated metrics are shown as follows:</p>
 <ol>
-<li><strong>SKU count</strong><br>
+<li><strong>SKU Count</strong><br>
 <img src="images/Product_count_rsa.png" alt="title"></li>
 </ol>
 <ol>
-<li><strong>SKU shelf share</strong>
+<li><strong>SKU Shelf Share</strong>
 <img src="images/Product_shelf_share_rsa.png" alt="title"></li>
 </ol>
 <ol>
-<li><p><strong>SKU vacancy</strong><br>
+<li><p><strong>SKU Vacancy</strong><br>
 A few important points regarding the calculation of this metric are as follows:</p>
 <ol>
 <li>Average width of each SKU from the whole training image is found.</li>
 <li>Each vacancy is checked for if an SKU can be placed there or not.</li>
 <li>Priorities for an SKU to be placed in any of these vacancies are as follows:<ol>
 <li>Adjacent SKUs</li>
-<li>An SKU from upper rack</li>
+<li>An SKU from the upper rack</li>
 <li>An SKU from below rack</li>
-<li>Any other SKU based on predicted count</li>
+<li>Any other SKU based on the predicted count</li>
 </ol>
 </li>
 </ol>
@@ -14896,13 +14909,13 @@ A few important points regarding the calculation of this metric are as follows:<
 </li>
 </ol>
 <ol>
-<li><p><strong>Out of stock SKUs</strong><br>
+<li><p><strong>Out of Stock SKUs</strong><br>
 A few important points regarding the calculation of this metric are as follows:</p>
 <ol>
-<li>In order to find out of stock SKUs, users are asked for the shelf IDs.</li>
-<li>Compliance table for these shelf IDs in the database are checked.</li>
-<li>Predicted counts and values from database are compared for each SKU on that shelf.</li>
-<li>Different alarms are raised depending on how low the predicted count is from actual count<ol>
+<li>To find out of stock SKUs, users are asked for the shelf IDs.</li>
+<li>Compliance table for these shelf IDs in the database is checked.</li>
+<li>Predicted counts and values from the database are compared for each SKU on that shelf.</li>
+<li>Different alarms are raised depending on how low the predicted count is from the actual count<ol>
 <li><strong>Low</strong>: if between 75% and 50%</li>
 <li><strong>Medium</strong>: if between 50% and 25%</li>
 <li><strong>High</strong>: if between 25% and 0%</li>
@@ -14922,10 +14935,10 @@ A few important points regarding the calculation of this metric are as follows:<
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Promo-Detection-Module">Promo Detection Module<a class="anchor-link" href="#Promo-Detection-Module">&#182;</a></h3><p>A few implementation details regarding this module are as follows:</p>
 <ol>
-<li>Since this dataset didn't have annotations for displayed promotions, we couldn't use deep learning based techniques.</li>
-<li>All the regions which have been predicted as presence of an SKU were filled with zero (black pixels).</li>
+<li>Since this dataset didn't have annotations for displayed promotions, we couldn't use deep learning-based techniques.</li>
+<li>All the regions which have been predicted as the presence of an SKU were filled with zero (black pixels).</li>
 <li>All the rack dividers were filled with zeros too.</li>
-<li>Entire image were <strong>thresholded</strong> and then <strong>Contour Detection</strong> were used.</li>
+<li>Entire image was <strong>thresholded</strong> and then <strong>Contour Detection</strong> were used.</li>
 <li>False positives were filtered using contour areas.</li>
 </ol>
 

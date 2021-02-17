@@ -13070,28 +13070,6 @@ div#notebook {
     });
     </script>
     <!-- End of mathjax configuration --></head>
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-<link rel="stylesheet" type="text/css" href="https://rawgit.com/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/main.css">
-
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<script src="https://rawgit.com/ipython-contrib/jupyter_contrib_nbextensions/master/src/jupyter_contrib_nbextensions/nbextensions/toc2/toc2.js"></script>
-
-<script>
-$( document ).ready(function(){
-
-            var cfg = {"base_numbering": 1, "nav_menu": {}, "number_sections": true, "sideBar": true, "skip_h1_title": false, "title_cell": "Table of Contents", "title_sidebar": "Contents", "toc_cell": false, "toc_position": {}, "toc_section_display": true, "toc_window_display": true};
-
-            // fire the main function with these parameters
-            require(['nbextensions/toc2/toc2'], function (toc2) {
-                toc2.table_of_contents(cfg);
-            });
-    });
-</script>
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -13099,15 +13077,7 @@ $( document ).ready(function(){
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Automated-Retail-Shelf-Analytics">Automated Retail Shelf Analytics<a class="anchor-link" href="#Automated-Retail-Shelf-Analytics">&#182;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Note</strong>: Click the following button to show or hide the code.</p>
-
+<h1 id="Retail-Shelf-Analytics">Retail Shelf Analytics<a class="anchor-link" href="#Retail-Shelf-Analytics">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -13179,7 +13149,7 @@ $( document ).ready(code_toggle);
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In todays competitive and evolving <strong>Consumer Packaged Goods (CPG)</strong> market, shelf management is a very important aspect for CPG manufacturers and retailers. <strong>Automated Retail Shelf Analytics</strong> is a powerful, accurate, and efficient way for CPG manufacturers and retailers to collect, measure, and analyze what is happening on the physical shelf; It helps them improve operational efficiencies, elevate shopper experience, and maximize revenues. In <strong>Automated Retail Shelf Analytics</strong>, power of <strong>advanced computer vision</strong> is harnessed and store shelves images are transformed into a comprehensive set of SKU-level metrics and insights which are listed follows:</p>
+<p>In today’s competitive and evolving <strong>Consumer Packaged Goods (CPG)</strong> market, shelf management is very critical to success and very difficult to execute. CPG companies need precise, real-time information about what’s selling, what isn’t, and why. That’s where the Reatil Shelf Analytics comes into picture. In <strong>Retail Shelf Analytics</strong>, power of <strong>adavanced computer vision</strong> is harnessed and store shelves images are transformed into a comprehensive set of SKU-level metrics and insights which are listed as below:</p>
 <ol>
 <li>Count of each SKU</li>
 <li>Linear shelf share of each SKU</li>
@@ -13187,7 +13157,7 @@ $( document ).ready(code_toggle);
 <li>Metrics related to placement of SKUs</li>
 <li>Promos and price tags displayed against the SKUs</li>
 </ol>
-<p>Once shelf pictures are captured and uploaded to the server, this technology automatically recognizes all SKUs, computes aforementioned KPIs, and delivers actionable reports back in the hands of the sales reps.</p>
+<p>Once shelf pictures are captured and uploaded to the cloud, this technology automatically recognizes all SKUs, computes aforementioned KPIs, and delivers actionable reports back in the hands of the sales reps.</p>
 
 </div>
 </div>
@@ -13207,10 +13177,23 @@ $( document ).ready(code_toggle);
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>To develop an <strong>Intelligent Retail Shelf Analytics</strong> system which can accept multiple shelf images at once, and generate aforementioned valuable metrics and actionable insights.</p>
+<p>To develop an <strong>Intelligent Retail Shelf Anlytics</strong> system which can accept multiple shelf images at once, and generate aforementioned valuable metrics and actionable insights.</p>
 
 </div>
 </div>
@@ -13225,7 +13208,7 @@ $( document ).ready(code_toggle);
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>All the modules of the system are as follows, which are explained in detail in coming sections.</p>
+<p>All the modules of the system are as follows. All these modules are explained in detail in coming sections.</p>
 
 </div>
 </div>
@@ -13248,7 +13231,14 @@ $( document ).ready(code_toggle);
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Since this project was for one of our CPG client at <strong>Fractal Analytics</strong>, it is not possible for me to present the project details on actual shelf data, so I will be presenting all the details with respect to a dataset which is available on <strong>Github</strong> for similar research. The dataset can be downloaded from <a href="https://github.com/gulvarol/grocerydataset">https://github.com/gulvarol/grocerydataset</a></p>
+<p>Since this project was for one of our CPG client at <strong>Fractal Analytics</strong>, it is not possible for me to present the project details on actual shelf data, so I will be presenting all the details with respect to a dataset which was made available from <strong>Github</strong> for similar research. The dataset can be downloaded from <a href="https://github.com/gulvarol/grocerydataset">https://github.com/gulvarol/grocerydataset</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 
 </div>
 </div>
@@ -13258,25 +13248,18 @@ $( document ).ready(code_toggle);
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A few details regarding the dataset are as follows:</p>
 <ol>
-<li>It was collected from around 40 groceries, with 4 cameras.</li>
-<li>It consists of products from 10 different cigarette brands.</li>
-<li>It consists of total 354 shelf images.</li>
+<li>Dataset was collected from around 40 groceries, with 4 cameras.</li>
+<li>Dataset has products from 10 different cigarette brands.</li>
+<li>Dataset has 354 shelf images.</li>
 <li>Out of these 354 shelf images, 300 has been used for training and rest has been used for testing.</li>
 <li>Annotation looks as shown below. Where, first entry is shelf image name (C1_P04_N1_S3_2.JPG), then number of products on that shelf (42), then (x,y,w,h) (1024, 1660, 228, 336) corresponding to these bounding boxes, and then brand id of the product (0).</li>
 </ol>
 <p><img src="images/Annotation_rsa.png" alt="title"></p>
 <ol>
-<li>It has only bounding box co-ordinates but no class information for all these bounding boxes.</li>
+<li>Dataset had only bounding box co-ordinates but no class information for all the bounding boxes.</li>
 <li>Co-ordinates are given as (x, y, w, h) where (x, y) is co-ordinate of upper-left corner, and (w,h) are width and height of the bounding box.</li>
-<li>All the bounding boxes are labeled as class 0. That is why, data for classification has to be labeled manually.   </li>
+<li>All the bounding boxes are labelled as class 0. That is why, data for classification has to be labelled manually.   </li>
 </ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="images/Shelf_1_rsa.JPG" alt="title"></p>
 
 </div>
@@ -13285,7 +13268,7 @@ $( document ).ready(code_toggle);
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Implementation-details-and-results">Implementation details and results<a class="anchor-link" href="#Implementation-details-and-results">&#182;</a></h2>
+<h2 id="Implementation-and-results">Implementation and results<a class="anchor-link" href="#Implementation-and-results">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13306,8 +13289,8 @@ $( document ).ready(code_toggle);
 <li>Images must be inputted in left to right order.</li>
 <li>It stitches two images at a time and repeats the process.</li>
 <li>Images must be resized such that they have equal height.</li>
-<li>It uses <strong>Sift descriptor</strong> to stitch images on the basis of matching key-points between the images.</li>
-<li>No. of matched key-points must be greater than 5% of total no. of pixels in smaller image, otherwise we say that there is not sufficient overlap and stitching can't be performed.</li>
+<li>It uses <strong>Sift descriptor</strong> to stitch images on the basis of matching keypoints between the images.</li>
+<li>No. of matched keypoints must be greater than 5% of total no. of pixels in smaller image, otherwise we say that there is not sufficient overlap and stitching can't be performed.</li>
 </ol>
 
 </div>
@@ -13315,7 +13298,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#This section contains the code for image stitching module.</span>
@@ -13579,24 +13562,11 @@ $( document ).ready(code_toggle);
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="images/Stitch_input_rsa.png" alt="title"></p>
-<p><strong>Note:</strong> Red rectangles here represent the overlapping region between adjacent images to be stitched.</p>
+<p><img src="images/Stitch_input_rsa.png" alt="title"><br>
+<strong>Note:</strong> Red rectangles here represent the overlapping region between adjacent images to be stitched.</p>
 
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13640,70 +13610,10 @@ $( document ).ready(code_toggle);
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This section contains code for object detection module.</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">cv2</span> <span class="k">as</span> <span class="nn">cv</span>
-<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;/data1/naquib.alam/data/test_labels.csv&#39;</span><span class="p">)</span>
-
-<span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">gfile</span><span class="o">.</span><span class="n">FastGFile</span><span class="p">(</span><span class="s1">&#39;/data1/naquib.alam/model/frozen_inference_graph.pb&#39;</span><span class="p">,</span><span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">graph_def</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">GraphDef</span><span class="p">()</span>
-    <span class="n">graph_def</span><span class="o">.</span><span class="n">ParseFromString</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
-
-<span class="n">sess</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
-<span class="n">sess</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">as_default</span><span class="p">()</span>
-<span class="n">tf</span><span class="o">.</span><span class="n">import_graph_def</span><span class="p">(</span><span class="n">graph_def</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">filename</span><span class="o">.</span><span class="n">unique</span><span class="p">():</span>
-    <span class="c1">#name = df.filename[0]</span>
-    <span class="c1"># Read and preprocess an image.</span>
-    <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;/data1/naquib.alam/CIGDataset/ShelfImages/&#39;</span><span class="o">+</span><span class="n">name</span><span class="p">)</span>
-    <span class="n">inp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
-    <span class="n">inp</span> <span class="o">=</span> <span class="n">inp</span><span class="p">[:,</span> <span class="p">:,</span> <span class="p">::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-    <span class="n">rows</span> <span class="o">=</span> <span class="n">inp</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">cols</span> <span class="o">=</span> <span class="n">inp</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-    <span class="n">out</span> <span class="o">=</span> <span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="n">sess</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;num_detections:0&#39;</span><span class="p">),</span>
-                <span class="n">sess</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;detection_scores:0&#39;</span><span class="p">),</span>
-                <span class="n">sess</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;detection_boxes:0&#39;</span><span class="p">),</span>
-                <span class="n">sess</span><span class="o">.</span><span class="n">graph</span><span class="o">.</span><span class="n">get_tensor_by_name</span><span class="p">(</span><span class="s1">&#39;detection_classes:0&#39;</span><span class="p">)],</span>
-               <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;image_tensor:0&#39;</span><span class="p">:</span> <span class="n">inp</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">inp</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">inp</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">3</span><span class="p">)})</span>
-    <span class="n">num_detections</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">out</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-    
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_detections</span><span class="p">):</span>
-	<span class="n">classId</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">out</span><span class="p">[</span><span class="mi">3</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
-    	<span class="n">score</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">out</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
-    	<span class="n">bbox</span> <span class="o">=</span> <span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">out</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]]</span>
-    	<span class="k">if</span> <span class="n">score</span> <span class="o">&gt;</span> <span class="mf">0.3</span><span class="p">:</span>
-      	   <span class="n">x</span> <span class="o">=</span> <span class="n">bbox</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">cols</span>
-           <span class="n">y</span> <span class="o">=</span> <span class="n">bbox</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">rows</span>
-           <span class="n">right</span> <span class="o">=</span> <span class="n">bbox</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">*</span> <span class="n">cols</span>
-           <span class="n">bottom</span> <span class="o">=</span> <span class="n">bbox</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="n">rows</span>
-           <span class="n">cv</span><span class="o">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">inp</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span><span class="p">)),</span> <span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">right</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">bottom</span><span class="p">)),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">thickness</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>    
-    
-
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Saving file name: &#39;</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">inp</span><span class="p">)</span>
-    <span class="n">result</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;/data1/naquib.alam/CIGDataset/Results/&#39;</span><span class="o">+</span><span class="n">name</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Saved&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Object-Classification-Module">Object Classification Module<a class="anchor-link" href="#Object-Classification-Module">&#182;</a></h3>
+<h3 id="Object-Classfication-Module">Object Classfication Module<a class="anchor-link" href="#Object-Classfication-Module">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13721,11 +13631,11 @@ $( document ).ready(code_toggle);
 </li>
 <li><p>All images were divided into <strong>11 classes</strong> including one class as <strong>Other</strong> which contains all those classes which had very few images.</p>
 </li>
-<li><p>Different <strong>pre-trained</strong> architectures were tried but <strong>VGG16</strong> was found to work better.</p>
+<li><p>Different <strong>pre-trained</strong> architectures were tried but <strong>Resnet50</strong> was found to work better.</p>
 </li>
 <li>Added <strong>FC layers</strong> and <strong>last 10 layers</strong> of the network were fine-tuned.</li>
 <li>Few things which improved the accuracy are as follows:<ol>
-<li><strong>Data augmentation</strong></li>
+<li><strong>Data augmenation</strong></li>
 <li><strong>Discriminative fine-tuning</strong></li>
 <li><strong>Gradual unfreezing</strong></li>
 <li><strong>Stochastic Gradient Descent With Restarts</strong></li>
@@ -13744,7 +13654,7 @@ $( document ).ready(code_toggle);
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This cell contains code for classification module.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This section contains code for classification module.</span>
 
 <span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">math</span><span class="o">,</span> <span class="nn">shutil</span><span class="o">,</span> <span class="nn">PIL</span><span class="o">,</span> <span class="nn">json</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13990,9 +13900,9 @@ $( document ).ready(code_toggle);
 <ol>
 <li>Outputs from previous modules were used to calculate all the relevant metrics.</li>
 <li>Number of racks on a shelf were found by sorting the x co-ordinates and then finding the transition points.</li>
-<li>Length (width) of each SKU were found by using the predicted width (w) of a bounding box.</li>
-<li>Length of each racks were also found in order to calculate the linear shelf share.</li>
-<li>All these informations were used to calculate aforementioned metrics.</li>
+<li>Length (width) of each box were found by using the predicted width.</li>
+<li>Length of each racks were also found.</li>
+<li>All these informations were used to calcualte aforementioned metrics.</li>
 </ol>
 
 </div>
@@ -14003,7 +13913,7 @@ $( document ).ready(code_toggle);
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#this cell contains the code for metrics calculation and promo detection module.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#this cell contains the code for generating all these metrics.</span>
 
 <span class="kn">import</span> <span class="nn">os</span> 
 <span class="kn">import</span> <span class="nn">re</span>
@@ -14880,15 +14790,15 @@ $( document ).ready(code_toggle);
 </ol>
 <ol>
 <li><p><strong>SKU vacancy</strong><br>
-A few important points regarding the calculation of this metric are as follows:</p>
+A few important points regarding the calcualiton of this metric are as follows:</p>
 <ol>
 <li>Average width of each SKU from the whole training image is found.</li>
-<li>Each vacancy is checked for if an SKU can be placed there or not.</li>
+<li>Each vacancy is checked for if an SKU can be placed or not.</li>
 <li>Priorities for an SKU to be placed in any of these vacancies are as follows:<ol>
 <li>Adjacent SKUs</li>
 <li>An SKU from upper rack</li>
 <li>An SKU from below rack</li>
-<li>Any other SKU based on predicted count</li>
+<li>Any other SKU based on count</li>
 </ol>
 </li>
 </ol>
@@ -14897,12 +14807,12 @@ A few important points regarding the calculation of this metric are as follows:<
 </ol>
 <ol>
 <li><p><strong>Out of stock SKUs</strong><br>
-A few important points regarding the calculation of this metric are as follows:</p>
+A few important points regarding the calcualiton of this metric are as follows:</p>
 <ol>
-<li>In order to find out of stock SKUs, users are asked for the shelf IDs.</li>
+<li>In order to find out of stock SKU, users are asked for the shelf IDs.</li>
 <li>Compliance table for these shelf IDs in the database are checked.</li>
-<li>Predicted counts and values from database are compared for each SKU on that shelf.</li>
-<li>Different alarms are raised depending on how low the predicted count is from actual count<ol>
+<li>Predicted count and values from database are compared.</li>
+<li>Different alarms are generated depending on how less the predicted count is from actual count<ol>
 <li><strong>Low</strong>: if between 75% and 50%</li>
 <li><strong>Medium</strong>: if between 50% and 25%</li>
 <li><strong>High</strong>: if between 25% and 0%</li>
@@ -14922,10 +14832,10 @@ A few important points regarding the calculation of this metric are as follows:<
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Promo-Detection-Module">Promo Detection Module<a class="anchor-link" href="#Promo-Detection-Module">&#182;</a></h3><p>A few implementation details regarding this module are as follows:</p>
 <ol>
-<li>Since this dataset didn't have annotations for displayed promotions, we couldn't use deep learning based techniques.</li>
-<li>All the regions which have been predicted as presence of an SKU were filled with zero (black pixels).</li>
-<li>All the rack dividers were filled with zeros too.</li>
-<li>Entire image were <strong>thresholded</strong> and then <strong>Contour Detection</strong> were used.</li>
+<li>Since in this dataset we didn't have annotations for displayed promotions, we couldn't use deep learning based techniques.</li>
+<li>All the regions which has been predicted as presence of an SKU were filled with zero (black pixels).</li>
+<li>All the rack didviders were filled with zeros too.</li>
+<li>Entire image were thresholded and then <strong>Contour Detection</strong> were used.</li>
 <li>False positives were filtered using contour areas.</li>
 </ol>
 
@@ -14939,6 +14849,19 @@ A few important points regarding the calculation of this metric are as follows:<
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
