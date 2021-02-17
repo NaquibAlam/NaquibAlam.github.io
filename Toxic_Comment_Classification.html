@@ -13017,6 +13017,19 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
+<style type="text/css">
+    /*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
+
+    </style>
 
 
 <style type="text/css">
@@ -13113,7 +13126,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
@@ -13143,7 +13156,7 @@ $( document ).ready(function(){
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[1]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13171,10 +13184,12 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s2">&quot;/Users/m0a04ut/MyData/Studz/Personal/Github/Portfolio/Toxic_Comment_Classification/&quot;</span><span class="p">)</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 </pre></div>
 
     </div>
@@ -13266,7 +13281,7 @@ $( document ).ready(code_toggle);
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Implementation-Details-and-results">Implementation Details and results<a class="anchor-link" href="#Implementation-Details-and-results">&#182;</a></h2>
+<h2 id="Implementation-Details-and-Results">Implementation Details and Results<a class="anchor-link" href="#Implementation-Details-and-Results">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -13279,7 +13294,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%capture</span>
@@ -13371,7 +13386,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%capture</span>
@@ -13395,7 +13410,7 @@ $( document ).ready(code_toggle);
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="nx">javascript</span>
@@ -13420,10 +13435,10 @@ $( document ).ready(code_toggle);
 
 
 
-<div id="a34d8cc7-b81d-4b56-bc38-79e429b68332"></div>
+<div id="c516104e-2704-4f99-a787-f4dd680da3aa"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#a34d8cc7-b81d-4b56-bc38-79e429b68332');
+var element = $('#c516104e-2704-4f99-a787-f4dd680da3aa');
 IPython.OutputArea.prototype._should_scroll = function(lines) {
     return false;
 }
@@ -13439,7 +13454,7 @@ IPython.OutputArea.prototype._should_scroll = function(lines) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#define all the global variables</span>
@@ -13464,7 +13479,7 @@ IPython.OutputArea.prototype._should_scroll = function(lines) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">train</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Dataset/jigsaw-toxic-comment-classification-challenge/train.csv&quot;</span><span class="p">)</span>
@@ -13486,7 +13501,7 @@ IPython.OutputArea.prototype._should_scroll = function(lines) {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">518</span><span class="p">:</span><span class="mi">523</span><span class="p">,:]</span><span class="o">.</span><span class="n">to_html</span><span class="p">(</span> <span class="n">justify</span><span class="o">=</span> <span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span> <span class="kc">False</span><span class="p">)))</span>
@@ -13651,7 +13666,7 @@ IPython.OutputArea.prototype._should_scroll = function(lines) {
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_22_0.png"
+<img src="output_22_0.png"
 >
 </div>
 
@@ -13875,7 +13890,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_27_0.png"
+<img src="output_27_0.png"
 >
 </div>
 
@@ -13946,7 +13961,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_30_0.png"
+<img src="output_30_0.png"
 >
 </div>
 
@@ -14181,7 +14196,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_36_0.png"
+<img src="output_36_0.png"
 >
 </div>
 
@@ -14259,7 +14274,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_40_0.png"
+<img src="output_40_0.png"
 >
 </div>
 
@@ -14309,7 +14324,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_41_0.png"
+<img src="output_41_0.png"
 >
 </div>
 
@@ -14599,7 +14614,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_52_0.png"
+<img src="output_52_0.png"
 >
 </div>
 
@@ -15246,7 +15261,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_59_0.png"
+<img src="output_59_0.png"
 >
 </div>
 
@@ -15427,7 +15442,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_67_0.png"
+<img src="output_67_0.png"
 >
 </div>
 
@@ -15534,7 +15549,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_71_0.png"
+<img src="output_71_0.png"
 >
 </div>
 
@@ -15729,7 +15744,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_77_0.png"
+<img src="output_77_0.png"
 >
 </div>
 
@@ -15858,7 +15873,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_80_0.png"
+<img src="output_80_0.png"
 >
 </div>
 
@@ -16104,7 +16119,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The architecture of the build model is shown as follows:</p>
+<p>The model architecture is shown as follows:</p>
 
 </div>
 </div>
@@ -16134,7 +16149,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="Toxic_Comment_Classification_files/Toxic_Comment_Classification_91_0.png"
+<img src="output_91_0.png"
 >
 </div>
 
