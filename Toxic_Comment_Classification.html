@@ -13242,7 +13242,7 @@ $( document ).ready(code_toggle);
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>A few details regarding the dataset are as follows:</p>
-<ol>
+<ul>
 <li>It comes from <strong>Jigsaw's Toxic Comment Classification</strong> challenge on <strong>Kaggle</strong>.</li>
 <li>It consists of <strong>159,571</strong> labeled training examples of <strong>Wikipedia</strong> comments that have been labeled by human raters for toxic behavior and <strong>153,164</strong> unlabeled test comments.</li>
 <li>The types of toxicity are:<ol>
@@ -13255,7 +13255,7 @@ $( document ).ready(code_toggle);
 </ol>
 </li>
 <li>The data comes in the schema of &lt;id, comment_text, toxic, severe_toxic, obscene, threat, insult, identity_hate&gt;, where the labels for _toxic, severe_toxic, obscene, threat, insult, and identity<em>hate</em> are all boolean.</li>
-</ol>
+</ul>
 
 </div>
 </div>
@@ -13435,10 +13435,10 @@ $( document ).ready(code_toggle);
 
 
 
-<div id="c516104e-2704-4f99-a787-f4dd680da3aa"></div>
+<div id="686c8fc5-f4ce-4b90-80c4-f63d1eb7e366"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#c516104e-2704-4f99-a787-f4dd680da3aa');
+var element = $('#686c8fc5-f4ce-4b90-80c4-f63d1eb7e366');
 IPython.OutputArea.prototype._should_scroll = function(lines) {
     return false;
 }
@@ -13666,7 +13666,7 @@ IPython.OutputArea.prototype._should_scroll = function(lines) {
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/output_22_0.png"
+<img src="output_22_0.png"
 >
 </div>
 
@@ -13890,7 +13890,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/output_27_0.png"
+<img src="output_27_0.png"
 >
 </div>
 
@@ -13961,7 +13961,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/output_30_0.png"
+<img src="output_30_0.png"
 >
 </div>
 
@@ -14196,7 +14196,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/output_36_0.png"
+<img src="output_36_0.png"
 >
 </div>
 
@@ -14274,7 +14274,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/output_40_0.png"
+<img src="output_40_0.png"
 >
 </div>
 
@@ -14324,7 +14324,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/output_41_0.png"
+<img src="output_41_0.png"
 >
 </div>
 
@@ -14614,7 +14614,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/output_52_0.png"
+<img src="output_52_0.png"
 >
 </div>
 
@@ -15261,7 +15261,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/output_59_0.png"
+<img src="output_59_0.png"
 >
 </div>
 
@@ -15442,7 +15442,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/output_67_0.png"
+<img src="output_67_0.png"
 >
 </div>
 
@@ -15549,7 +15549,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/output_71_0.png"
+<img src="output_71_0.png"
 >
 </div>
 
@@ -15744,7 +15744,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/output_77_0.png"
+<img src="output_77_0.png"
 >
 </div>
 
@@ -15873,7 +15873,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea ">
-<img src="Toxic_Comment_Classification_files/output_80_0.png"
+<img src="output_80_0.png"
 >
 </div>
 
@@ -15903,13 +15903,9 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 <li>Apart from pre-trained embeddings; meta-features, as discussed in the feature engineering section, have also been used which slightly improves the accuracy.</li>
 <li>Vocabulary size and the maximum length of a comment are restricted to <strong>30000</strong> and <strong>200</strong> respectively.</li>
 <li><strong>Snapshot Ensembles</strong> has also been used to train the model better and achieve better predictions. </li>
-</ul>
-<ol>
 <li><p>Below are the hyper-parameters which have been obtained after hyper-parameter tuning:</p>
-<ul>
-<li><strong>Number of bi-directional GRU layers:</strong> 2</li>
-</ul>
 <ol>
+<li><strong>Number of bi-directional GRU layers:</strong> 2</li>
 <li><strong>Number of GRU units in a layer:</strong> 128</li>
 <li><strong>Number of hidden dense layers:</strong> 2</li>
 <li><strong>Number of hidden dense units:</strong> 512</li>
@@ -15920,9 +15916,10 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 <li><strong>Optimizer:</strong> Adam</li>
 </ol>
 </li>
-<li><p>Achieved <strong>mean column-wise AUC</strong> score of <strong>0.986</strong>.</p>
-</li>
-</ol>
+</ul>
+<ul>
+<li>Achieved <strong>mean column-wise AUC</strong> score of <strong>0.986</strong>.  </li>
+</ul>
 
 </div>
 </div>
@@ -16149,7 +16146,7 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 
 
 <div class="output_png output_subarea output_execute_result">
-<img src="Toxic_Comment_Classification_files/output_91_0.png"
+<img src="output_91_0.png"
 >
 </div>
 
@@ -16212,13 +16209,13 @@ The distribution of toxic and non-toxic comments, and different types of toxic c
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>This qualitative analysis reveals that the model is able to fairly confidently identify many different forms of toxicity, most notably:</p>
-<ol>
+<ul>
 <li>Very obvious straightforward comments are detected with very high confidence and tagged accordingly.</li>
 <li>Racial/identity slurs are also detected with very high confidence and labeled as identity hate.</li>
 <li>The model is also able to fairly identify immature insults, as shown by the model's ability to label <strong>"Your face"</strong> as Toxic and Insult.</li>
 <li>Neutral statements are labeled as Non-toxic as shown in the first row.</li>
 <li>The model is also able to identify fairly complex sentence structure.</li>
-</ol>
+</ul>
 
 </div>
 </div>
