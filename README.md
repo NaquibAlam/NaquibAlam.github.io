@@ -4,6 +4,10 @@ Please visit following links to access the pages to go through the code and pres
 2. __Toxic Comment Classification__: https://naquibalam.github.io/Toxic_Comment_Classification.html
 3. __Covid Data Visualisation__: https://naquibalam.github.io/Covid_19_DataVisualization.html
 
+__Note__: For this  https://naquibalam.github.io/Covid_19_DataVisualization.html, the code needs to rerun in order to update the stats and charts otherwise we will 
+be seeing the older stats and charts.
+
+
 I will keep adding new projects in my github pages going forward.
 
 
